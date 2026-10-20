@@ -448,6 +448,7 @@
 
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
+    // threshold 必须为 0：超长文章高度远超视口，永远达不到百分比交叉比例，会一直不可见
     var observer = new IntersectionObserver(function (entries) {
       each(entries, function (entry) {
         if (entry.isIntersecting) {
@@ -455,7 +456,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { rootMargin: '0px 0px -32px 0px', threshold: 0.06 });
+    }, { rootMargin: '0px 0px -32px 0px', threshold: 0 });
     each(revealEls, function (el) {
       observer.observe(el);
     });

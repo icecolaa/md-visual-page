@@ -2,7 +2,7 @@
 name: md-visual-page
 slug: md-visual-page
 displayName: Markdown 一键可视化网页
-version: 1.0.0
+version: 1.0.1
 description: 把一个 Markdown 文件或整个文件夹一键生成单个离线可读的可视化 HTML 网页，完整保留正文并自带目录导航、全文检索、阅读进度、章节折叠与代码复制。当用户说“把 md 文件/文件夹一键生成可视化网页”“把教程或笔记转成网页”“生成带目录和检索的文档页面”“md 转单文件 HTML”时使用。
 summary: 把 md 文件或文件夹渲染成单文件可视化 HTML 页面，自带导航、检索、进度与代码复制，离线可用。
 tags:
